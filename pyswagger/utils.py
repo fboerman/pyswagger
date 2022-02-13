@@ -596,7 +596,7 @@ def patch_path(base_path, path):
     return path
 
 
-class CaseInsensitiveDict(collections.MutableMapping):
+class CaseInsensitiveDict(collections.abc.MutableMapping):
     """ a case insensitive dict:
         - allow to query with case insensitive keys (get, in)
         - iteration would return original key
